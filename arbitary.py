@@ -1,8 +1,5 @@
 def add(*x):
-    sum=0
-    for i in x:
-        sum+=i
-    print(sum) 
+    print(sum(x)) 
 
 
 
