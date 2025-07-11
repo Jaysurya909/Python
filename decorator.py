@@ -2,7 +2,7 @@ def bot(fx):
     def mfx():
         print("Good morning sir!!")
         fx()
-    return mfx
+    return mfx # dont need to use () when returning a function
    
 
 
@@ -12,3 +12,5 @@ def hello():
 
 
 hello()
+
+# bot(hello)()   anotheer way of calling the bot function without using @
