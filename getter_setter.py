@@ -18,8 +18,11 @@ class person():
 
 x=person("bot",9)
 
-print(x._age)  # can also use x.age
+print(x.age)  # can also use x._age but using _age will directly access the variable self._age 
 
+x._age=-5        #if we use x._age the value will change because we are directly accesing the private variable and not the setter
+
+print(x.age)  #the value didnt change as we access the getter x.age and then calles the setter x.age
 
 
 
