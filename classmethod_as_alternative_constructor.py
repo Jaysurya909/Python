@@ -6,7 +6,7 @@ class strs1():
     @classmethod
     def seprate(cls,string):
         name,salary=string.split("-") #or we can use *string.split("-") to unpack the string in two seprate things
-        return cls(name,int(salary)) 
+        return cls(name,int(salary))  #this becomes strs1(name,salry) e.g., p1=strs1.seprate(str11) becomes strs1('Bot',25000)
 
 
     
