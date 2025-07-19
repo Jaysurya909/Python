@@ -1,3 +1,6 @@
+#Getter and setter are basically used to access and update the private and protected objects
+#Getter access them and setter updates them , we must first use getter to access them before updating with setter
+
 class Noob:
     def __init__(self, rollno, name):
         self._rollno = rollno       # protected
