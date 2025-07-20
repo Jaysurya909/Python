@@ -23,6 +23,11 @@ class Lion(animal):
     
     def sound_make(self): #overwriting the sound_make from animal class
         print(f"The Lion {self.name} makes the sound {self.sound} and its age is {self.age}")
+
+class monkey(animal):
+    def __init__(self, name, sound ,age):
+        super().__init__(name, sound) # no need to writ self when using super keyword
+        self.age=age
     
 
         
@@ -37,4 +42,6 @@ p1.sound_make() #The sound make functiom of Dog class
 p2=Lion("Simba","Roar!!",8)
 p2.sound_make()
         
+p3=monkey("Chimpazi","hehe!!",45)
+p3.sound_make() # monkey class used the sound_make function of animal class
 # single inheritance is the most commonly used inheritance method 
