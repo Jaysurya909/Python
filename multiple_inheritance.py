@@ -38,20 +38,21 @@ c=make_animal("Dog","!Bark!")
 
 # Complex level code as we are using super keyword in the parent class aswell
 class Animal:
-    def __init__(self, name, **kwargs):
+    def __init__(self, name,**kwargs):
         self.name = name
         super().__init__(**kwargs)
 
 class sound1:
-    def __init__(self, sound, **kwargs):
+    def __init__(self,sound,**kwargs):
         self.sound = sound
         super().__init__(**kwargs)
 
 class make_animal(Animal, sound1):
     def __init__(self, name, sound):
-        super().__init__(name=name, sound=sound)
+        super().__init__(name=name,sound=sound)
+        
         print(f"The name of the animal is {self.name} and sound of the animal is {self.sound}")
 
 
 
-k=make_animal("Cat","Meow!!")        
+k=make_animal("Cat","Meow!")        
