@@ -30,6 +30,7 @@ class Bulldog(Dog):
 
 p1=Bulldog("Tommy","White")
 p1.showinfo()
+print("\nThe second method")
 
 # The more scalable and flexible method
 
@@ -42,21 +43,21 @@ class Animal:
 
 class Dog(Animal):
     def __init__(self, Animal_name, breed):
-        super().__init__(Animal_name)
+        Animal.__init__(self,Animal_name)
         self.breed = breed
 
     def showinfo(self):
-        super().showinfo()
+        Animal.showinfo(self)
         print(f"The breed of the dog is:- {self.breed}")
 
 class Bulldog(Dog):
     def __init__(self, Animal_name, breed, dog_name, color):
-        super().__init__(Animal_name, breed)
+        Dog.__init__(self,Animal_name, breed)
         self.dog_name = dog_name
         self.color = color
 
     def showinfo(self):
-        super().showinfo()
+        Dog.showinfo(self)
         print(f"The name of the dog is:- {self.dog_name}\nAnd the color of the dog is:- {self.color}")
 
 # Now pass everything when creating the object
