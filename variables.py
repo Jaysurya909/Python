@@ -3,4 +3,4 @@ print(list1)
 tuple1 = (("parrot", "sparrow"), ("Lion", "Tiger"))
 print(tuple1)
 dict1 = {"name":"Sakshi", "age":20, "canVote":True}
-print(dict1)
+print(dict1) // remember this 
